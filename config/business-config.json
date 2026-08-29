@@ -1,0 +1,9 @@
+{
+  "businessName": "Acme Roofing Co.",
+  "niche": "roofing",
+  "services": ["Roof inspections", "Roof repair", "Full roof replacement", "Storm damage assessment"],
+  "serviceArea": "Indianapolis and surrounding suburbs (30 mile radius)",
+  "hours": "Mon-Fri 8am-6pm, Sat 9am-2pm",
+  "tone": "friendly, straightforward, no jargon — talk like a trusted local contractor, not a call center",
+  "missedCallMessage": "Hi! Sorry we missed your call at {business_name}. What can we help you with? Reply here and we'll get right back to you."
+}
