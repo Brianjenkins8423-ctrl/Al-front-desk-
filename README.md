@@ -112,6 +112,8 @@ was built.
 
 ## GoHighLevel MCP
 
+**How to use it:** see [GOHIGHLEVEL.md](GOHIGHLEVEL.md).
+
 `.mcp.json` connects Claude Code to GoHighLevel's official MCP server
 (`https://services.leadconnectorhq.com/mcp/`) for the fronthalo sub-account
 (location `BjB46xGWbqptCmiilMpx`). No token is stored in the repo: in Claude Code
