@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "gohighlevel": {
+      "type": "http",
+      "url": "https://services.leadconnectorhq.com/mcp/",
+      "headers": {
+        "locationId": "BjB46xGWbqptCmiilMpx"
+      }
+    }
+  }
+}
