@@ -109,3 +109,13 @@ on your computer or via the Claude app) and just describe what you want changed
 in plain English, e.g. "add a feature that emails me every time a new lead is
 captured." Claude Code will write and test the code for you the same way this
 was built.
+
+## GoHighLevel MCP
+
+`.mcp.json` connects Claude Code to GoHighLevel's official MCP server
+(`https://services.leadconnectorhq.com/mcp/`) for the fronthalo sub-account
+(location `BjB46xGWbqptCmiilMpx`). No token is stored in the repo: in Claude Code
+cloud sessions the proxy injects the GoHighLevel credential for
+`services.leadconnectorhq.com`. Running locally, add an
+`Authorization: Bearer <Private Integration token>` header via your own
+user-level MCP config rather than committing it here.
