@@ -121,3 +121,8 @@ cloud sessions the proxy injects the GoHighLevel credential for
 `services.leadconnectorhq.com`. Running locally, add an
 `Authorization: Bearer <Private Integration token>` header via your own
 user-level MCP config rather than committing it here.
+
+## Selling it: Cold SMS Playbook
+
+How to book sales calls with local contractors by text: see
+[COLD-SMS-PLAYBOOK.md](COLD-SMS-PLAYBOOK.md). Start with §0, the "Missed-Call Audit" campaign.
