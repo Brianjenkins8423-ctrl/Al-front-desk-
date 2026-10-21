@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.*
+!.env.example
+# Runtime data holds customer phone numbers and conversations
+data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm

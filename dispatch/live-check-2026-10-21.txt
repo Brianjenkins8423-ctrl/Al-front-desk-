@@ -1,0 +1,18 @@
+PASS  write guard: createAppointment refused before any network call
+      blocked as designed
+PASS  calendar readable
+      Onboarding Call (30 mins slots, round_robin)
+PASS  free-slots readable (authoritative availability)
+      66 slots, first 2026-10-22T08:00:00-04:00
+PASS  calendar events readable (conflict cross-check)
+      0 events in window
+PASS  configured pipeline + all 8 stage ids exist in live GHL
+      FH MASTER | Office Requests: 8 stages, all mapped ids present
+PASS  opportunity search readable
+      0 returned (total 0)
+FAIL  custom fields readable (needs locations/customFields.readonly scope)
+      GHL GET /locations/BjB46xGWbqptCmiilMpx/customFields -> 401: The token is not authorized for this scope.
+FAIL  users readable (needed for technician mapping; users.readonly scope)
+      GHL GET /users/ -> 401: The token is not authorized for this scope.
+
+6/8 passed

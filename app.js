@@ -19,7 +19,7 @@ function maskPhone(p) {
   return s.length > 4 ? `***${s.slice(-4)}` : '***';
 }
 
-function createApp({ env = process.env, storage, generateReply, sendSms, businessConfig, log = console }) {
+function createApp({ env = process.env, storage, generateReply, sendSms, businessConfig, dispatch = null, log = console }) {
   const app = express();
   app.disable('x-powered-by');
   app.use(express.urlencoded({ extended: false, limit: '20kb' }));
@@ -126,6 +126,12 @@ function createApp({ env = process.env, storage, generateReply, sendSms, busines
       res.sendStatus(500); // non-2xx so Twilio retries; the CallSid guard prevents double texts
     }
   });
+
+  // Dispatch API: only mounted when explicitly provided (DISPATCH_ENABLED=true in server.js).
+  if (dispatch) {
+    const { createDispatchRouter } = require('./dispatch/routes');
+    app.use('/dispatch', createDispatchRouter({ services: dispatch.services, secrets: dispatch.secrets, requireAdmin, log }));
+  }
 
   app.get('/leads', requireAdmin, (req, res) => res.json(storage.getLeads()));
 
