@@ -110,6 +110,13 @@ in plain English, e.g. "add a feature that emails me every time a new lead is
 captured." Claude Code will write and test the code for you the same way this
 was built.
 
+## Dispatch core (not live)
+
+`dispatch/` holds the audited dispatch core (duplicate prevention, appointment conflicts,
+emergency escalation, per-client isolation) and its GoHighLevel pipeline mapping. It is not
+connected to the server and sends nothing. See [dispatch/README.md](dispatch/README.md);
+run its tests with `npm test`.
+
 ## GoHighLevel MCP
 
 **How to use it:** see [GOHIGHLEVEL.md](GOHIGHLEVEL.md).

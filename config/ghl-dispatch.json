@@ -1,0 +1,19 @@
+{
+  "_note": "Read from the live fronthalo sub-account on 2026-10-21 (read-only). Mapping data only: nothing in this repo writes these stages to GHL yet.",
+  "locationId": "BjB46xGWbqptCmiilMpx",
+  "timezone": "America/Indianapolis",
+  "pipeline": {
+    "name": "FH MASTER | Office Requests",
+    "id": "DbgrLtWXnSiW4FVGbDp0",
+    "stages": {
+      "newRequest": "d75e3f11-af95-4658-beb3-fadfdff84844",
+      "humanReviewNeeded": "ae1f06ee-7406-404a-b4b2-76e96b83d2e7",
+      "appointmentConfirmed": "865033ba-2380-4990-8b60-74447b5df563",
+      "dispatchPending": "665175b8-a44d-4cbd-ba14-78eee7b78f14",
+      "dispatchAcknowledged": "65293ae5-c08f-4aef-855a-e67ef7a909d7",
+      "workCompleted": "38fc2252-bf40-4a65-9015-e129083617ad",
+      "closedResolved": "b558d3e4-f1f4-4316-8b2f-3b8ed966a1f2",
+      "exceptionReconcile": "97c7af47-6f57-452a-b50e-bd009035722b"
+    }
+  }
+}
